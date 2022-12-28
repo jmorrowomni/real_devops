@@ -1,0 +1,14 @@
+- name: set hostname
+  ansible.builtin.hostname:
+    name: vps.blackbeltballerina.com
+    use: systemd
+
+- name: localhost
+  ansible.builtin.lineinfile:
+    path: /etc/hosts
+    line: 127.0.0.1 localhost.localdomain localhost
+
+- name: vps.blackbeltballerina.com
+  ansible.builtin.lineinfile:
+    path: /etc/hosts
+    line: 139.144.233.245 vps.blackbeltballerina.com vps

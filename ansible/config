@@ -1,0 +1,4 @@
+Host blackbeltballerina.com
+     User root
+     Hostname 139.144.233.245
+     IdentityFile ~/.ssh/id_rsa_linode
